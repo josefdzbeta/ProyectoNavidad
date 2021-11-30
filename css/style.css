@@ -33,7 +33,7 @@ body>footer{
     top: 100vh;
     height: 264px;
     background: rgb(66,66,66);
-    background: linear-gradient(90deg, rgba(66,66,66,0.9976365546218487) 0%, rgba(112,111,111,1) 35%, rgba(149,148,148,1) 100%);
+    background: linear-gradient(90deg, rgba(66,66,66,0.9976365546218487) 0%, rgba(204,200,200,1) 43%, rgba(245,245,247,1) 100%);
     flex-basis: auto;
 }
 footer div{
@@ -50,15 +50,23 @@ footer div img{
     padding-bottom: 20px;
 }
 footer div p{
-    color: #d3d3d3;
+    color: #161A1D;
     padding-right: 40px;
 }
 
 footer div ul li{
-    color: white;
+    
     list-style-type: none;
     padding: 10px;
     display: inline-block
+}
+footer div ul li a {
+    color: #161A1D;
+    text-decoration: none;
+    transition: 0.5s;
+}
+footer div ul li a:hover {
+    color: #FFFFFF;
 }
 
 
