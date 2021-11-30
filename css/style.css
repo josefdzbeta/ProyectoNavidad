@@ -1,12 +1,19 @@
-footer{
-    margin-top: auto;
+*{
+    padding: 0;
+    margin: 0;
+}
+html, body{
+    height: 100%;
+}
+body>footer{
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: whitesmoke;
+    position: sticky;
+    top: 100vh;
+    width: 100%;
 }
 footer div{
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-
+    
 }
