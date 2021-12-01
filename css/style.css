@@ -6,7 +6,14 @@
 html, body{
     height: 100%;
     font-family: 'Fira Sans', sans-serif;
-
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height: auto;
+    display: block;
 }
 .contenedor{
     width: 100%;
@@ -23,12 +30,6 @@ html, body{
     margin-right: auto;
 }
 
-
-img{
-    width: 100%;
-    height: auto;
-    display: block;
-}
 .contenedorH1{
     width: 50%;
     display: flex;
@@ -45,14 +46,14 @@ img{
 body>footer{
     position: sticky;
     top: 100vh;
-    height: 120px;
+    height: 264px;
     background: rgb(66,66,66);
     background: linear-gradient(90deg, rgba(66,66,66,0.9976365546218487) 0%, rgba(204,200,200,0.68531162464986) 43%, rgba(245,245,247,1) 100%);
     flex-basis: auto;
 }
 footer div{
     width: 100%;
-    height: 120px;
+    height: 264px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -80,15 +81,33 @@ footer div ul li a {
     transition: 0.5s;
 }
 footer div ul li a:hover{
-    color: #FFFFFF;
+    color: rgb(0, 162, 255);
 }
 footer div ul li a:after {
     content: "";
     display: block;
     width: 0;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid black;
     transition:all 0.3s linear 0s;
 }
 footer div ul li a:hover:after{
     width: 90%;
 }
+footer div a{
+    position: relative;
+    color: #161A1D;
+}
+footer div a img{
+    position: absolute;
+    opacity: 0;
+    width: 100px;
+    height: auto;
+    top: -20px;
+    transition: opacity .5s, top .5s;
+}
+footer div a:hover img{
+   opacity: 1;
+   top: 20px;
+}
+
+
