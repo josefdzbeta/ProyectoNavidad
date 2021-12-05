@@ -1,48 +1,69 @@
 <!DOCTYPE html>
 <html lang=es>
-    <head>
-        <meta charset=UTF-8>
-        <meta http-equiv=X-UA-Compatible content=IE=edge>
-        <meta name=viewport content=width=device-width,initial-scale=1.0>
-        <link rel=stylesheet href=css/style.css>
-        <link href=https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,600&display=swap rel=stylesheet>
-        <link rel=icon type=image/png href=img/iconoWeb.png sizes=64x64>
-        <title>Ad Maiorem Dei Gloriam</title>
-    </head>
-    <body>
-       <main>
-        <div class=contenedor>
-            <div class=cajasContenido>
-              <div class=contenedorImg>
-                <img id=imgInicial src=img/AdobeStock_295010758.jpeg loading=lazy>
-              </div>
-              <div class=contenedorH1>
-                <h1 class=mensajeH1>Los juguetes son para jugar, sin género de dudas y sin estereotipos de género</h1>
-              </div>
-            </div>
+
+  <head>
+    <meta charset=UTF-8>
+    <meta http-equiv=X-UA-Compatible content=IE=edge>
+    <meta name=viewport content=width=device-width,initial-scale=1.0>
+    <link rel=stylesheet href=css/style.css>
+    <link
+      href=https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,600&display=swap
+      rel=stylesheet>
+    <link rel=icon type=image/png href=img/iconoWeb.png sizes=64x64>
+    <title>Ad Maiorem Dei Gloriam</title>
+  </head>
+  <body>
+    <main>
+      <header>
+          <h1>El espíritu de la Navidad ya ha llegado</h1> <!--Incluir particulas JS-->
+          <!--<h1>Compartimos la suerte, con quien compartimos la vida</h1>-->
+      </header>
+      <div class=contenedor>
+        <div class=cajasContenido>
+          <div class=contenedorImg>
+            <img id=imgInicial src=img/AdobeStock_295010758.jpeg loading=lazy>
           </div>
-          <div class=contenedor>
-            <div class=cajasContenido id=flexDir>
-              <div class=contenedorImg>
-                <img id=imgInicial src=img/AdobeStock_295010758.jpeg loading=lazy>
-              </div>
-              <div class=contenedorH1>
-                <h1 class=mensajeH1>Los juguetes son para jugar, sin género de dudas y sin estereotipos de género</h1>
-              </div>
-            </div>
+          <div class=contenedorH1>
+            <h1 class=mensajeH1>Los juguetes son para jugar, sin género de dudas y sin estereotipos de género</h1>
           </div>
-       </main>
-        <footer>
-            <div>
-                <img src="img/fundacion-Loyola.png">
-                <ul>
-                    <li><a href="https://fundacionloyola.com/vguadalupe/">EVG</a></li>
-                    <li><a href="https://fundacionloyola.com">Fundación</a></li>
-                    <li><a href="https://www.linkedin.com/in/jose-angel-fernandez-betancourt-70b533213/">LinkedIn</a> </li>
-                </ul>
-                <a href=https://github.com/josefdzbeta/ProyectoNavidad>&copy; Jose Angel Betancourt <img src="img/GitHub-logo.png"></a>
-            </div>
-        </footer>
-        <script src=js/script.js></script>
-    </body>
+        </div>
+      </div>
+      <div class=contenedor>
+        <div class=cajasContenido id=flexDir>
+          <div class=contenedorImg>
+            <img id=imgInicial src=img/AdobeStock_295010758.jpeg loading=lazy>
+          </div>
+          <div class=contenedorH1>
+            <h1 class=mensajeH1>Los juguetes son para jugar, sin género de dudas y sin estereotipos de género</h1>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <img src="img/fundacion-Loyola.png">
+        <ul>
+          <li><a href="https://fundacionloyola.com/vguadalupe/">EVG</a></li>
+          <li><a href="https://fundacionloyola.com">Fundación</a></li>
+          <li><a href="https://www.linkedin.com/in/jose-angel-fernandez-betancourt-70b533213/">LinkedIn</a> </li>
+        </ul>
+        <a href=https://github.com/josefdzbeta/ProyectoNavidad id="git">&copy; Jose Angel Betancourt <img
+            src="img/GitHub-logo.png"></a>
+      </div>
+    </footer>
+    <!--librerias de animaciones-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.js" integrity="sha512-UgS0SVyy/0fZ0i48Rr7gKpnP+Jio3oC7M4XaKP3BJUB/guN6Zr4BjU0Hsle0ey2HJvPLHE5YQCXTDrx27Lhe7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--gsap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--Scroll Reveal-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js" integrity="sha512-Kr+RPfLjQ71E0cJ9nseJ6jwTrnmMnuSPnnsVQQ/ZYYCjOHKfJcWj8ILICXnvf9A7ZQChNzIbr9x/ZAxA6xAZlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--debugging-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js" integrity="sha512-mq6TSOBEH8eoYFBvyDQOQf63xgTeAk7ps+MHGLWZ6Byz0BqQzrP+3GIgYL+KvLaWgpL8XgDVbIRYQeLa3Vqu6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--Script página navideña-->
+    <script src=js/script.js></script>
+  </body>
 </html>
