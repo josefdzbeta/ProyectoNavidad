@@ -5,12 +5,16 @@
 
 'use strict'
 
+//Particulas en JavaScript
+
+
 window.onload = iniciar
 
 function iniciar(){
   document.getElementById('musica').onclick=musicaFondo
+  document.getElementById('nieve').onclick=nevar;
   
-  const MUSICAFONDO=document.querySelector("audio")
+  const MUSICAFONDO=document.querySelector('audio')
   MUSICAFONDO.loop
   MUSICAFONDO.volume=0.5
   function musicaFondo(){
@@ -20,12 +24,24 @@ function iniciar(){
         MUSICAFONDO.pause()
     }
   }
+
+  particlesJS.load('particles-js', 'particles.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
 }
 
-//INTRO
+function nevar(){
+  if(document.querySelector("#particles-js").style.display!="none"){
+    document.querySelector("#particles-js").style.display="none";
+  }else{
+    document.querySelector("#particles-js").style.display="block";
+  }
+}
+
+//Intro video animacion 
 const intro = document.querySelector('header')
-const text = intro.querySelector("h1")
-const video = intro.querySelector("video")
+const text = intro.querySelector('h1')
+const video = intro.querySelector('video')
 
 //Scroll
 const controller = new ScrollMagic.Controller()
@@ -55,7 +71,7 @@ let scrollpos = 0
 let delay = 0
 
 //Convertir en segundos los milisegundos
-scene.on("update", e => {
+scene.on('update', e => {
   scrollpos = e.scrollPos / 1000;
 });
 

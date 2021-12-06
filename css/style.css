@@ -7,7 +7,12 @@ html, body{
     height: 100%;
     font-family: 'Fira Sans', sans-serif;
 }
-
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
 header{
     height: 100vh;
 }
@@ -27,6 +32,7 @@ header video {
 }
 #iconos i{
     color: rgba(235, 235, 235, 0.363);
+    cursor: pointer;
 }
 header h1{
     font-size: 3rem;
@@ -56,8 +62,9 @@ a{
     width: 100%;
     height: 100vh;
 }
-#musica{
-    cursor: pointer;
+img{
+    width: 100%;
+    height: auto;
 }
 .contenedor{
     width: 100%;
