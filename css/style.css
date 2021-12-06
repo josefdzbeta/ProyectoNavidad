@@ -7,9 +7,37 @@ html, body{
     height: 100%;
     font-family: 'Fira Sans', sans-serif;
 }
+
 header{
     height: 100vh;
+    /*background-image: url('../img/AdobeStock_292751739.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    text-align: center;*/
 }
+header video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+header h1{
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px darkgray;
+    z-index: 1;
+    animation: texto 6s ease-out 1 ;
+    opacity: 1;
+}
+
 a{
     text-decoration: none;
 }
