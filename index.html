@@ -6,25 +6,31 @@
     <meta http-equiv=X-UA-Compatible content=IE=edge>
     <meta name=viewport content=width=device-width,initial-scale=1.0>
     <link rel=stylesheet href=css/style.css>
+    <link rel="stylesheet" href="css/uicons-regular-rounded.css">
     <link
       href=https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,600&display=swap
       rel=stylesheet>
-    <link rel=”stylesheet” href=”https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css”>
-    <link rel=icon type=image/png href=img/iconoWeb.png sizes=64x64>
+    <link rel=icon type=image/png href=recursos/iconoWeb.png sizes=64x64>
     <title>Ad Maiorem Dei Gloriam</title>
+    <!--Font Awesone, FlatIcon no funciona-->
+    <script src="https://kit.fontawesome.com/a59e4794ac.js" crossorigin="anonymous"></script>
+    <link rel=”stylesheet” href=”https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css”>
   </head>
   <body>
     <main>
       <header>
           <h1>El espíritu de la Navidad ya ha llegado</h1> <!--Incluir particulas JS-->
           <!--<h1>Compartimos la suerte, con quien compartimos la vida</h1>-->
-          <video src="img/headerVideo.mp4"></video>
+          <video src="recursos/headerVideo.mp4"></video>
       </header>
-      <img id=imgInicial2 src="img/AdobeStock_300709225.jpeg" loading=lazy>
+      <div id="imgInicial2">
+        <img id=imgInicial2 src="recursos/AdobeStock_300709225.jpeg" loading=lazy>
+      </div>
+      
       <div class=contenedor>
         <div class=cajasContenido>
           <div class=contenedorImg>
-            <img id=imgInicial src="img/AdobeStock_300709225.jpeg" loading=lazy>
+            <img id=imgInicial src="recursos/AdobeStock_315417351.jpeg" loading=lazy>
           </div>
           <div class=contenedorH1>
             <h1 class=mensajeH1>Esta navidad recuerda que..</h1>
@@ -34,7 +40,7 @@
       <div class=contenedor>
         <div class=cajasContenido id=flexDir>
           <div class=contenedorImg>
-            <img id=imgInicial src=img/AdobeStock_295010758.jpeg loading=lazy>
+            <img id=imgInicial src=recursos/AdobeStock_295010758.jpeg loading=lazy>
           </div>
           <div class=contenedorH1>
             <h1 class=mensajeH1>Los juguetes son para jugar, sin género de dudas y sin estereotipos de género</h1>
@@ -42,22 +48,24 @@
         </div>
       </div>
     </main>
-    <i id="musica" class="fi fi-rs-jugar"></i>
-    <i class="fi fi-rs-Copo de nieve"></i>
+    <div id="iconos">
+      <i id="musica" class="fas fa-play fa-2x"></i>
+      <i id="nieve" class="far fa-snowflake fa-2x" ></i>
+    </div>
     <footer>
       <div>
-        <img id="musica" src="img/fundacion-Loyola.png">
+        <img id="musica" src="recursos/fundacion-Loyola.png">
         <ul>
           <li><a href="https://fundacionloyola.com/vguadalupe/">EVG</a></li>
           <li><a href="https://fundacionloyola.com">Fundación</a></li>
           <li><a href="https://www.linkedin.com/in/jose-angel-fernandez-betancourt-70b533213/">LinkedIn</a> </li>
         </ul>
         <a href=https://github.com/josefdzbeta/ProyectoNavidad id="git">&copy; Jose Angel Betancourt <img
-            src="img/GitHub-logo.png"></a>
+            src="recursos/GitHub-logo.png"></a>
       </div>
     </footer>
     <!--Musica-->
-    <audio src="img/Shrek.mp3"></audio>
+    <audio src="recursos/Shrek.mp3"></audio>
     <!--Librerías de animaciones-->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
