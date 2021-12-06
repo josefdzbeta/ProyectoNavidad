@@ -13,7 +13,9 @@ window.onload = iniciar
 function iniciar(){
   document.getElementById('musica').onclick=musicaFondo
   document.getElementById('nieve').onclick=nevar;
-  
+  particlesJS.load('particles-js', 'js/particles.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
   const MUSICAFONDO=document.querySelector('audio')
   MUSICAFONDO.loop
   MUSICAFONDO.volume=0.5
@@ -25,9 +27,7 @@ function iniciar(){
     }
   }
 
-  particlesJS.load('particles-js', 'particles.json', function() {
-    console.log('callback - particles.js config loaded');
-  });
+ 
 }
 
 function nevar(){
@@ -81,3 +81,4 @@ setInterval(() => {
   //console.log(scrollpos, delay)
   video.currentTime = delay
 }, 33.3);
+

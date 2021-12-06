@@ -8,10 +8,12 @@ html, body{
     font-family: 'Fira Sans', sans-serif;
 }
 #particles-js {
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 3;
 }
 header{
     height: 100vh;
@@ -26,13 +28,12 @@ header video {
     right: 0;
     bottom: 0;
     padding-bottom: 20px;
-}
-#musica{
-    margin-right: 20px;
+    z-index: 100;
 }
 #iconos i{
     color: rgba(235, 235, 235, 0.363);
     cursor: pointer;
+    margin-right: 20px;
 }
 header h1{
     font-size: 3rem;
