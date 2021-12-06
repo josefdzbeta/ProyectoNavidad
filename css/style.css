@@ -20,12 +20,13 @@ header h1{
     font-size: 3rem;
     font-weight: 400;
     letter-spacing: 0.1rem;
+    text-transform: uppercase;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    text-shadow: 2px 2px darkgray;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
     z-index: 1;
     animation: texto 3s 1;
     opacity: 1;
@@ -41,7 +42,9 @@ a{
 img{
     width: 100%;
     height: auto;
-    display: block;
+}
+#musica{
+    cursor: pointer;
 }
 .contenedor{
     width: 100%;
@@ -54,6 +57,7 @@ img{
     object-fit: cover;
 }
 .contenedorImg{
+    height: 100vh;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -91,6 +95,7 @@ footer div img{
     width: 15%;
     height: auto;
     padding-bottom: 20px;
+    padding-left: 40px;
 }
 footer div p{
     color: #161A1D;
@@ -124,6 +129,7 @@ footer div ul li a:hover:after{
 footer div #git{
     position: relative;
     color: #161A1D;
+    padding-right: 40px;
 }
 footer div #git img{
     position: absolute;
@@ -133,7 +139,7 @@ footer div #git img{
     top: -20px;
     transition: opacity .5s, top .5s;
 }
-footer div :hover img{
+footer div #git:hover img{
    opacity: 1;
    top: 20px;
 }
