@@ -13,7 +13,7 @@ html, body{
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 3;
+    z-index: 1;
 }
 header{
     height: 100vh;
@@ -61,7 +61,7 @@ a{
 }
 #imgInicial2{
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 img{
     width: 100%;
@@ -89,6 +89,7 @@ img{
     display: flex;
     align-items: center;
     padding: 0 2rem;
+    font-weight: 300;
 }
 
 .mensajeH1{
@@ -104,6 +105,7 @@ body>footer{
     background: rgb(66,66,66);
     background: linear-gradient(90deg, rgba(66,66,66,0.9976365546218487) 0%, rgba(204,200,200,0.68531162464986) 43%, rgba(245,245,247,1) 100%);
     flex-basis: auto;
+    z-index: 2;
 }
 footer div{
     width: 100%;
@@ -111,9 +113,10 @@ footer div{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 1.5em;
 }
 footer div img{
-    width: 15%;
+    width: 25%;
     height: auto;
     padding-bottom: 20px;
     padding-left: 40px;
@@ -159,10 +162,12 @@ footer div #git img{
     height: auto;
     top: -20px;
     transition: opacity .5s, top .5s;
+    left: 40px;
 }
 footer div #git:hover img{
    opacity: 1;
-   top: 20px;
+   top: 30px;
+   left: 40px;
 }
 
 
