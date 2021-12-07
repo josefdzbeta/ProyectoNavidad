@@ -50,14 +50,8 @@ header h1{
     color: white;
     text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
     z-index: 1;
-    animation: texto 3s 1;
-    opacity: 1;
 }
-@keyframes texto {
-    0%{
-        opacity: 0;
-    }
-}
+
 /*////////////////////////////////*/
 a{
     text-decoration: none;
@@ -91,19 +85,15 @@ img{
 }
 .contenedorImg{
     width: 50%;
-    margin-left: auto;
-    margin-right: auto;
 }
 .contenedorH1{
     width: 50%;
     display: flex;
     align-items: center;
     padding: 0 2rem;
-    text-align: center;
 }
 .mensajeH1{
     font-weight: 400;
-    text-align: center;
 }
 #flexDir{
     flex-direction: row !important;
@@ -182,4 +172,8 @@ footer div #git:hover img{
    left: 40px;
 }
 
-
+@media only screen and (max-width: 800px) {
+    h1 {
+      font-size: medium;
+    }
+  }
