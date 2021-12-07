@@ -6,7 +6,10 @@
 html, body{
     height: 100%;
     font-family: 'Fira Sans', sans-serif;
+    background-color: #f0f0f2;
 }
+
+/*/////////////PARTICULAS, ICONOS Y HEADER////////////*/
 #particles-js {
     position: fixed;
     top: 0;
@@ -55,49 +58,58 @@ header h1{
         opacity: 0;
     }
 }
-
+/*////////////////////////////////*/
 a{
     text-decoration: none;
-}
-#imgInicial2{
-    width: 100%;
-    height: auto;
 }
 img{
     width: 100%;
     height: auto;
+    vertical-align: bottom;
+
 }
+/*////////////////////////////////*/
+#imgInicial{
+    width: 100%;
+    position: relative;
+}
+#msgInicial{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+/*//////////////Contenedor de imagenes y titulos////////////*/
 .contenedor{
     width: 100%;
-    height: 100vh;    
 }
 .cajasContenido{
     display: flex;
     flex-direction: row-reverse;
     align-content: center;
-    object-fit: cover;
 }
 .contenedorImg{
-    height: 100vh;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
-
 .contenedorH1{
     width: 50%;
     display: flex;
     align-items: center;
     padding: 0 2rem;
-    font-weight: 300;
+    text-align: center;
 }
-
 .mensajeH1{
     font-weight: 400;
+    text-align: center;
 }
 #flexDir{
     flex-direction: row !important;
 }
+
+/*/////////////////FOOTER////////////////////*/
 body>footer{
     position: sticky;
     top: 100vh;

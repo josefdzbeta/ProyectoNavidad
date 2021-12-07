@@ -42,8 +42,9 @@ function nevar(){
 const intro = document.querySelector('header')
 const text = intro.querySelector('h1')
 const video = intro.querySelector('video')
+//const contenedor = document.querySelector('contendor')
 
-//Scroll
+//Nuevo Scroll
 const controller = new ScrollMagic.Controller()
 //Escenas
 let scene = new ScrollMagic.Scene({
