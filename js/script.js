@@ -40,7 +40,7 @@ function nevar(){
 
 //Intro video animacion 
 const intro = document.querySelector('header')
-const text = intro.querySelector('h1')
+const text =  intro.querySelector('h1')
 const video = intro.querySelector('video')
 //const contenedor = document.querySelector('contendor')
 

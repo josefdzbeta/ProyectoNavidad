@@ -5,8 +5,8 @@
 }
 html, body{
     height: 100%;
-    font-family: Helvetica;
-    background-color: #f0f0f2;
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #FFFFFF;
 }
 
 /*/////////////PARTICULAS, ICONOS Y HEADER////////////*/
@@ -57,7 +57,7 @@ a{
     text-decoration: none;
 }
 img{
-    width: 100%;
+    max-width: 100%;
     height: auto;
     vertical-align: bottom;
 }
@@ -76,7 +76,7 @@ img{
     color: rgb(87, 87, 87);
     text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
 }
-#iguales{
+.iguales{
     position: relative;
     width: 75%;
     margin-left: auto;
@@ -84,15 +84,22 @@ img{
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+.iguales2{
+    top: 18% !important;
+    left: 50% !important;
+}
+
 .white{
     color: white;
 }
 .igualdad{
     margin-top: 4rem;
     margin-bottom: 4rem;
-    text-align: center;
     height: 40px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .igualdad h1 span{
@@ -111,7 +118,7 @@ img{
     width: 50%;
 }
 #pad{
-    padding: 2rem;
+    padding: 0 2rem;
 }
 .contenedorH1{
     width: 50%;
