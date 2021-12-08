@@ -11,19 +11,19 @@
 window.onload = iniciar
 
 function iniciar(){
-  document.getElementById('musica').onclick=musicaFondo
+  document.getElementById('musica').onclick=musicaDeFondo
   document.getElementById('nieve').onclick=nevar;
   particlesJS.load('particles-js', 'js/particles.json', function() {
     console.log('callback - particles.js config loaded');
   });
-  const MUSICAFONDO=document.querySelector('audio')
-  MUSICAFONDO.loop
-  MUSICAFONDO.volume=0.5
-  function musicaFondo(){
-    if(MUSICAFONDO.paused){
-        MUSICAFONDO.play()
+  const music=document.querySelector('audio')
+  music.loop
+  music.volume=0.5
+  function musicaDeFondo(){
+    if(music.paused){
+        music.play()
     }else{
-        MUSICAFONDO.pause()
+        music.pause()
     }
   }
 
