@@ -60,7 +60,9 @@ img{
     width: 100%;
     height: auto;
     vertical-align: bottom;
-
+}
+iframe{
+    z-index: 10;
 }
 /*////////////////////////////////*/
 #imgInicial{
