@@ -63,18 +63,40 @@ img{
 }
 
 /*////////////////////////////////*/
-#imgInicial{
+.imgInicial{
     width: 100%;
     position: relative;
 }
-#msgInicial{
+.msgInicial{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: 2rem;
+    font-size: 1.3rem;
     color: rgb(87, 87, 87);
     text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+}
+#iguales{
+    position: relative;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.white{
+    color: white;
+}
+.igualdad{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+}
+
+.igualdad h1 span{
+    font-weight: bold;
 }
 /*//////////////Contenedor de imagenes y titulos////////////*/
 .contenedor{
