@@ -60,7 +60,6 @@ img{
     width: 100%;
     height: auto;
     vertical-align: bottom;
-    object-fit: cover;
 }
 
 /*////////////////////////////////*/
@@ -110,6 +109,9 @@ img{
 }
 .contenedorImg{
     width: 50%;
+}
+#pad{
+    padding: 2rem;
 }
 .contenedorH1{
     width: 50%;
@@ -212,4 +214,4 @@ footer div #git:hover img{
    footer div #git{
        padding-right: 0;
    }
-  }
+}
