@@ -61,9 +61,7 @@ img{
     height: auto;
     vertical-align: bottom;
 }
-iframe{
-    z-index: 10;
-}
+
 /*////////////////////////////////*/
 #imgInicial{
     width: 100%;
@@ -72,9 +70,11 @@ iframe{
 #msgInicial{
     position: absolute;
     top: 50%;
-    left: 40%;
+    left: 50%;
     transform: translate(-50%,-50%);
-    color: white;
+    font-size: 2rem;
+    color: rgb(87, 87, 87);
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
 }
 /*//////////////Contenedor de imagenes y titulos////////////*/
 .contenedor{
@@ -83,6 +83,7 @@ iframe{
 .cajasContenido{
     display: flex;
     flex-direction: row-reverse;
+    text-align: center;
     align-content: center;
 }
 .contenedorImg{
@@ -93,6 +94,7 @@ iframe{
     display: flex;
     align-items: center;
     padding: 0 2rem;
+    justify-content: center;
 }
 .mensajeH1{
     font-weight: 400;
@@ -109,7 +111,6 @@ body>footer{
     background: rgb(66,66,66);
     background: linear-gradient(90deg, rgba(66,66,66,0.9976365546218487) 0%, rgba(204,200,200,0.68531162464986) 43%, rgba(245,245,247,1) 100%);
     flex-basis: auto;
-    z-index: 2;
 }
 footer div{
     width: 100%;
@@ -120,7 +121,7 @@ footer div{
     font-size: 1.5em;
 }
 footer div img{
-    width: 25%;
+    width: 300px;
     height: auto;
     padding-bottom: 20px;
     padding-left: 40px;
@@ -154,6 +155,7 @@ footer div ul li a:after {
 footer div ul li a:hover:after{
     width: 90%;
 }
+
 footer div #git{
     position: relative;
     color: #161A1D;
@@ -173,9 +175,23 @@ footer div #git:hover img{
    top: 30px;
    left: 40px;
 }
-
 @media only screen and (max-width: 800px) {
     h1 {
       font-size: medium;
+    }
+    footer div{
+        display: flex;
+        flex-direction: column;
+    }
+    footer div img{
+        width: 200px;
+        padding-top: 15px;
+        padding-left: 0;
+    }
+    footer div #git img{
+        display: none;
+    }
+    footer div {
+        font-size: 1em;
     }
   }
