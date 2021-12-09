@@ -273,3 +273,10 @@ footer div #git:hover img{
        flex-direction: column-reverse !important;
    }
 }
+@media only screen and (max-width: 600px){
+
+    .msgFinal{
+        bottom: 20px;
+    }
+}
+    
