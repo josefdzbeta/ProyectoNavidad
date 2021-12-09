@@ -105,6 +105,24 @@ img{
 .igualdad h1 span{
     font-weight: bold;
 }
+.final{
+    margin-top: 2rem;
+}
+.imgInicial .final h1{
+    position: absolute;
+    bottom: 0 !important;
+    right: 0 !important;
+}
+#outro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    height: 700px;
+    width: 900px;
+    z-index: 100;
+}
 /*//////////////Contenedor de imagenes y titulos////////////*/
 .contenedor{
     width: 100%;
@@ -116,9 +134,6 @@ img{
 }
 .contenedorImg{
     width: 50%;
-}
-#pad{
-    padding: 0 2rem;
 }
 .contenedorH1{
     width: 50%;
@@ -220,5 +235,9 @@ footer div #git:hover img{
     }
    footer div #git{
        padding-right: 0;
+   }
+   #outro{
+       height: 350px;
+       width: 200px;
    }
 }
