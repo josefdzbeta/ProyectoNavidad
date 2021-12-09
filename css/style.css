@@ -20,6 +20,7 @@ html, body{
 }
 header{
     height: 100vh;
+    transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 header video {
     height: 100%;
