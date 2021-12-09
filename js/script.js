@@ -26,8 +26,6 @@ function iniciar(){
         music.pause()
     }
   }
-
- 
 }
 
 function nevar(){
@@ -39,7 +37,7 @@ function nevar(){
 }
 
 //Intro video animacion 
-const intro = document.querySelector('.intro')
+const intro = document.querySelector('header')
 const text =  intro.querySelector('h1')
 const video = intro.querySelector('video')
 //const contenedor = document.querySelector('contendor')
@@ -56,7 +54,7 @@ let scene = new ScrollMagic.Scene({
 .addTo(controller)
 
 //Animacion de texto inicial 
-const textAnim = TweenMax.fromTo(text, 3, { opacity: 1 }, { opacity: 0 });
+/*const textAnim = TweenMax.fromTo(text, 3, { opacity: 1 }, { opacity: 0 });
 
 let scene2 = new ScrollMagic.Scene({
   duration: 6000,
@@ -64,7 +62,7 @@ let scene2 = new ScrollMagic.Scene({
   triggerHook: 0
 })
   .setTween(textAnim)
-  .addTo(controller)
+  .addTo(controller)*/
 //Animacion de video
 let accelamount = 0.1
 let scrollpos = 0
