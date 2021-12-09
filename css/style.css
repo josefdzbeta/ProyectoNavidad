@@ -20,8 +20,17 @@ html, body{
 }
 header{
     height: 100vh;
-    transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+header h1{
+    animation: textos 6s 1;
+}
+@keyframes textos {
+    0%{
+        color: black;
+        opacity: 0;
+    }
+}
+
 header video {
     height: 100%;
     width: 100%;
@@ -225,9 +234,6 @@ footer div #git:hover img{
    left: 40px;
 }
 @media only screen and (max-width: 800px) {
-    h1 {
-      font-size: medium;
-    }
     footer div{
         display: flex;
         flex-direction: column;
@@ -252,6 +258,7 @@ footer div #git:hover img{
        flex-direction: column-reverse;
        align-items: center;
        justify-content: center;
+       margin-bottom: 200px;
    }
    .contenedorImg{
        width: 100%;
