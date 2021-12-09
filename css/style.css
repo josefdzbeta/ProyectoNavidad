@@ -114,6 +114,7 @@ img{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    
 }
 .msgFinal{
     position: absolute;
@@ -124,7 +125,6 @@ img{
     margin-right: auto;
 }
 #outro{
-    z-index: 2;
     height: 700px;
     width: 900px;
 }
