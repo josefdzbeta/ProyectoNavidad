@@ -108,21 +108,27 @@ img{
 .final{
     margin-top: 2rem;
 }
-.imgInicial .final h1{
+.vidFinal{
     position: absolute;
-    bottom: 0 !important;
-    right: 0 !important;
-}
-#outro{
-    position: absolute;
+    z-index: 100;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+.msgFinal{
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#outro{
     z-index: 2;
     height: 700px;
     width: 900px;
-    z-index: 100;
 }
+
 /*//////////////Contenedor de imagenes y titulos////////////*/
 .contenedor{
     width: 100%;
@@ -145,7 +151,7 @@ img{
 .mensajeH1{
     font-weight: 400;
 }
-#flexDir{
+.flexDir{
     flex-direction: row !important;
 }
 
@@ -239,5 +245,20 @@ footer div #git:hover img{
    #outro{
        height: 350px;
        width: 200px;
+   }
+   
+   .cajasContenido{
+       flex-direction: column-reverse;
+       align-items: center;
+       justify-content: center;
+   }
+   .contenedorImg{
+       width: 100%;
+   }
+   .contenedorH1{
+       width: 100%;
+   }
+   .flexDir{
+       flex-direction: column-reverse !important;
    }
 }
