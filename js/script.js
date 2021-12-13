@@ -73,10 +73,10 @@ scene.on('update', e => {
   scrollpos = e.scrollPos / 1000;
 });
 
-//Conseguir un delay al hacer el scroll para que el delay intente alcanzar la posicion de scroll y así conseguir una transición más suave
+//Conseguir un delay al hacer el scroll y así conseguir una transición más suave
 setInterval(() => {
   delay += (scrollpos - delay) * accelamount
   //console.log(scrollpos, delay)
   video.currentTime = delay
-}, 45);
+}, 42);
 
