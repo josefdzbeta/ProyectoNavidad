@@ -5,7 +5,7 @@
 
 'use strict'
 
-//Particulas en JavaScript
+
 
 
 window.onload = iniciar
@@ -13,6 +13,7 @@ window.onload = iniciar
 function iniciar(){
   document.getElementById('musica').onclick=musicaDeFondo
   document.getElementById('nieve').onclick=nevar;
+  //Particulas en JavaScript
   particlesJS.load('particles-js', 'js/particles.json', function() {
     console.log('callback - particles.js config loaded');
   });
