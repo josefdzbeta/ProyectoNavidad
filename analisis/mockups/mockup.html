@@ -7,7 +7,7 @@
     <meta name=viewport content=width=device-width,initial-scale=1.0>
     <link rel=stylesheet href=style.css>
     <link href=https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,600&display=swap rel=stylesheet>
-    <link rel=icon type=image/png href=recursos/iconoWeb.png sizes=64x64>
+    <link rel=icon type=image/png href=../../recursos/AdobeStock_369610356.jpeg sizes=64x64>
     <title>Ad Maiorem Dei Gloriam</title>
     <!--Font Awesone, FlatIcon no funciona-->
     <script src="https://kit.fontawesome.com/a59e4794ac.js" crossorigin="anonymous"></script>
@@ -16,20 +16,18 @@
     <main>
       <header>
           <h1>El espíritu de la Navidad ya ha llegado</h1> 
-          <!--<h1>Compartimos la suerte, con quien compartimos la vida</h1>-->
-          <video src="../../recursos/headerVideo.mp4"></video>
+          <video src="../../recursos/My Movie 1.mp4"></video>
       </header>
-      <div id="imgInicial">
-        <img src="../../recursos/AdobeStock_295010758.jpeg" loading="lazy">
-        <div id="msgInicial">
+      <div class="imgInicial">
+        <img src="../../recursos/AdobeStock_369610356.jpg" >
+        <div class="msgInicial">
           <h1 class="mensajeH1">Esta Navidad recuerda que..</h1>
         </div>
       </div>
-      
       <div class="contenedor">
         <div class="cajasContenido">
           <div class="contenedorImg">
-            <img src="../../recursos/AdobeStock_280276236.jpeg" loading="lazy">
+            <img src="../../recursos/AdobeStock_280276236.jpeg" >
           </div>
           <div class="contenedorH1">
             <h1 class="mensajeH1">Los juguetes son para jugar</h1>
@@ -37,9 +35,9 @@
         </div>
       </div>
       <div class="contenedor">
-        <div class="cajasContenido" id="flexDir">
+        <div class="cajasContenido flexDir" >
           <div class="contenedorImg">
-            <img id="imgInicial" src="../../recursos/AdobeStock_245786759.jpeg" loading="lazy">
+            <img src="../../recursos/AdobeStock_245786759.jpeg" >
           </div>
           <div class="contenedorH1">
             <h1 class="mensajeH1">No tienen género ni estereotipos</h1>
@@ -49,31 +47,53 @@
       <div class="contenedor">
         <div class="cajasContenido">
           <div class="contenedorImg">
-            <img src="../../recursos/AdobeStock_301943459.jpeg" loading="lazy">
+            <img src="../../recursos/AdobeStock_301943459.jpeg" >
           </div>
           <div class="contenedorH1">
             <h1 class="mensajeH1">No importa de dónde vengas</h1>
           </div>
         </div>
       </div>
-      <div id="imgInicial">
-        <img src="../../recursos/AdobeStock_78406820.jpeg" loading="lazy">
-        <div id="msgInicial">
-          <h1 class="mensajeH1">Porque todos somos iguales</h1>
+      <div class="iguales">
+        <img src="../../recursos/AdobeStock_178067438.jpeg" >
+        <div class="msgInicial white iguales2" >
+          <h1 class="mensajeH1">Porque todos somos únicos</h1>
+        </div>
+      </div>
+      <div class="igualdad">
+        <h1 class="mensajeH1">En la diferencia está la <span>igualdad</span></h1>
+      </div>
+      
+      <div class="contenedor">
+        <div class="cajasContenido flexDir">
+          <div class="contenedorH1">
+            <img src="../../recursos/AdobeStock_321447314.jpeg" >
+          </div>
+          <div class="contenedorH1">
+            <img src="../../recursos/AdobeStock_78406820.jpg" >
+          </div>
+        </div>
+      </div>
+      <div class="imgInicial final">
+        <img src="../../recursos/AdobeStock_300000041.jpeg" >
+        <div class="vidFinal">
+          <video id="outro" src="../../recursos/My Movie 2.mp4" controls></video>
+        </div>
+        <div class="msgFinal white"><h1 class="mensajeH1">Estas Navidades, recuerda que todos somos iguales.</h1></div>
+          
         </div>
       </div>
     </main>
-   
     <div id="iconos">
       <i id="musica" class="fas fa-play fa-2x"></i>
       <i id="nieve" class="far fa-snowflake fa-2x" ></i>
     </div>
     <footer>
       <div>
-        <img src="../../recursos/fundacion-Loyola.png">
+        <a href="https://fundacionloyola.com/vguadalupe/compania-de-jesus/"><img src="../../recursos/fundacion-Loyola.png"></a>
         <ul>
           <li><a href="https://fundacionloyola.com/vguadalupe/">EVG</a></li>
-          <li><a href="https://fundacionloyola.com">Fundación</a></li>
+          <li><a href="https://fundacionloyola.com">Fundación Loyola</a></li>
           <li><a href="https://www.linkedin.com/in/jose-angel-fernandez-betancourt-70b533213/">LinkedIn</a> </li>
         </ul>
         <a href=https://github.com/josefdzbeta/ProyectoNavidad id="git">&copy; Jose Angel Betancourt <img
@@ -82,8 +102,6 @@
     </footer>
     <!--Musica-->
     <audio src="../../recursos/Shrek.mp3"></audio>
-    <!--Librerías de animaciones-->
     
-  
   </body>
 </html>
