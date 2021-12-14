@@ -88,7 +88,6 @@ scene.on('update', e => {
   scrollpos = e.scrollPos / 1000
 })
 
-//  Delay al hacer scroll para una transición más suave 
 setInterval(() => {
   delay += (scrollpos - delay) * accelamount
   //console.log(scrollpos, delay)
