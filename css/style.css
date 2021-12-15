@@ -47,11 +47,12 @@ header video {
     color: rgba(235, 235, 235, 0.363);
     cursor: pointer;
     margin-right: 20px;
+    transition-timing-function: ease;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 #iconos i:hover{
     color: rgba(107, 107, 110, 0.616);
     cursor: pointer;
-    transition: 0.5s;
     margin-right: 20px;
 }
 header h1{
